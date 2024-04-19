@@ -1,2 +1,2 @@
-> [Back](/README.md)
+> [Back](../README.md)
 # Project Proposal
