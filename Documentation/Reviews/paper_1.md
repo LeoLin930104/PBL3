@@ -1,4 +1,4 @@
-> [Back](/Documentation/Reviews/reviews.md)
+> [Back](../Reviews/reviews.md)
 <div style="text-align: right"> Myat Ma De May Phuu Ngon</div>
 <div style="text-align: right"> 26002304901</div>
 <div style="text-align: right"> April 19th 2024</div>
@@ -14,6 +14,7 @@ Regarding utilizing screen space, horizontal scrolling is said to be one problem
 By taking notes of the UI design problems and solutions in this paper, we will be able to make an app that is efficiently working and aesthetic with our own brand which will later be appealing to our users.<div>
 
 ## Reference
+
 Design patterns for user interface for mobile applications
 Nilsson, E. G. (2009). Design patterns for user interface for mobile applications. Advances in engineering software, 40(12), 1318-1328.
 
