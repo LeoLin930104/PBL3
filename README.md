@@ -3,10 +3,10 @@
 ## Documentation Index
 
 > ### Proposal
->  + [Proposal](sample.pdf)
+>  + [Project Proposal](/Documentation/proposal.md)
 > ### Phase 1
 >  + [System Requirement](Documentation/system_requirement.md)
->  + [Review](Documentation/Reviews/reviews.md)
+>  + [Reviews](Documentation/Reviews/reviews.md)
 > ### Phase 2
 >  + []()
 
