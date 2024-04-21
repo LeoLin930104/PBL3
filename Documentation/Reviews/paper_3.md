@@ -11,7 +11,7 @@
 <br>
 <div style="text-align: justify"> An online experiment is defined as experiments tested by real users. In simple word, having real users rate the recommendation they received from different recommendation systems. With in the development phase, there is a validation process. Through reading this paper, I believe our team should develop multiple recommendation systems, and implement similar experiments to compare various systems. However, this is optimictic about time constaint for this project. We can still evaluate a single recommendation system if we could only develop one, but preferably multiple systems.<div>
 
-## Reference
+<h2>Reference</h2>
 
 <div style="text-align: left"> Shani, Guy, and Asela Gunawardana. "Evaluating recommendation systems." Recommender systems handbook (2011): 257-297. <div>
 

@@ -11,7 +11,7 @@
 <br>
 <div style="text-align: justify"> Although I cannot understand fully about the technicalities presented here in this paper, I understand the importance of route planning to our project. And the paper suggested that therer are algorithmic approach this problem.<div>
 
-## Reference
+<h2>Reference</h2>
 
 <div style="text-align: left"> Mitchell, J. S. (1991, March). Algorithmic approaches to optimal route planning. In Mobile Robots V (Vol. 1388, pp. 248-259). SPIE. <div>
 

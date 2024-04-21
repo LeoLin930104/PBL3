@@ -13,7 +13,7 @@ Regarding utilizing screen space, horizontal scrolling is said to be one problem
 <div style="text-align: justify"> Regarding design at large, one main problem is the design that supports branding, is aesthetic, and utilizes screen space optimally. If the branding includes a graphical profile, the UI controls will look different from platform standard. This may cause usability issues, being added for aesthetic reasons may decrease the affordance of the control and take up space. One solution is to include the company logo in various places of the UI and use colors and other visual elements from the graphical profile of the company in UI controls and backgrounds. For our app, this point is essential as we also need branding. The last problem in the same field is user interaction during waiting for long-lasting operations to complete and will probably make mobile users impatient. Few solutions that could be useful to our app are providing a wait cursor with a message saying “please wait…”, or to inform the user that something is happening, and indicate progress with a counter and/or a slider/gauge that shows the percentage of time spent.
 By taking notes of the UI design problems and solutions in this paper, we will be able to make an app that is efficiently working and aesthetic with our own brand which will later be appealing to our users.<div>
 
-## Reference
+<h2>Reference</h2>
 
 Design patterns for user interface for mobile applications
 Nilsson, E. G. (2009). Design patterns for user interface for mobile applications. Advances in engineering software, 40(12), 1318-1328.
