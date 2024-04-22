@@ -8,9 +8,11 @@
 
 > ### Proposal
 >  + [Project Proposal](/Documentation/proposal.md)
+
 > ### Phase 1
 >  + [Reviews](Documentation/Reviews/reviews.md)
 >  + [System Requirement](Documentation/system_requirement.md)
+
 > ### Phase 2
 >  + []()
 
