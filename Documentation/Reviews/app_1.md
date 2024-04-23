@@ -1,7 +1,7 @@
 > [Back](../Reviews/reviews.md)
 <div style="text-align: right"> Myat Ma De May Phuu Ngon</div>
 <div style="text-align: right"> 26002304901</div>
-<div style="text-align: right"> April 21th 2024</div>
+<div style="text-align: right"> April 21st 2024</div>
 
 ## Review on ‘Best Time’ API
 
@@ -20,5 +20,5 @@ There are two packages to buy to upgrade the foot data limitations and venue sea
 
 <h2>Reference</h2>
 <div style="text-align: justify"> 
-https://besttime.app
+Link: https://besttime.app
 </div>
