@@ -17,7 +17,7 @@
 <br>
 
 
-<h3>Detailed Features</h3>
+<h3>Overview of Features</h3>
 <div style="text-align: justify; text-indent: 36px">In detail, our project aims to realize a few features. The main feature would allow the user to choose, based on their preference, the shrines and temples they would want to visit. The app would then recommend a visiting route, considering the crowdedness data. The chosen preferences, currently, would include worshiping gods, ratings, reviews, distance, price, and crowdedness. The list is evolvable depending on available data from shrine and temple databases. Although this feature is potentially helpful, however, it alone as an application is not complete.</div>
 
 <div style="text-align: justify; text-indent: 36px">There are secondary features that the application would like to implement to make the experience more complete. One of them would be shrine and temple information-look up. The user should be able to see the information such as address, operating hours, worshiping gods, and built era before they make decisions on which to visit, or simply, they would want to look up the information. Similarly, there may be cases in which the user is not clear about their preference for shrines and temples as they simply might want to explore. Another feature would allow the user to explore shrines and temples by categories. An explore tab in the application would list different types of temples for the user to read and explore. If they are interested, the user is then led to use the main feature to visit the shrines or temples that appeal to their interests.</div>
@@ -28,7 +28,7 @@
 <h3>Methodology</h3>
 <div style="text-align: justify; text-indent: 36px">Regarding what platform to host and serve this application, the decision should depend on how the application is used. This application focuses on how a tourist can avoid crowded areas in real-time. The real-time factor suggests that the device the user is most probable to carry is limited to their smartphone. Due to the limited selection of devices, this application is more preferably be developed as an app on iOS/Android, or a web app which is accessible from any mobile device. Considering the time limitation of this project, creating the application on a duo platform is not wise in time management. A web app is the most appropriate solution. </div>
 
-<div style="text-align: justify; text-indent: 36px">With some research, we have discovered that there are apps on both IOS and Android that can serve a web app as a regular smartphone application. The team would be looking into the possibility of such deployment. However, remaining as a web app would be easier to manage in terms of consistency.</div>
+<div style="text-align: justify; text-indent: 36px">With some research, we have discovered that there are apps on both iOS and Android that can serve a web app as a regular smartphone application. The team would be looking into the possibility of such deployment. However, remaining as a web app would be easier to manage in terms of consistency.</div>
 <br>
 
 <h3>Limitation</h3>
