@@ -1,6 +1,6 @@
 > [Back](../Reviews/reviews.md)
 <div style="text-align: right"> Sakai Tomoki</div>
-<div style="text-align: right"> 26002304---</div>
+<div style="text-align: right"> 26002301848</div>
 <div style="text-align: right"> April 19th 2024</div>
 
 ##  Review on Hot pepper gourmet, ホットペッパーグル

@@ -1,6 +1,6 @@
 > [Back](../Reviews/reviews.md)
 <div style="text-align: right"> Hama Yuina</div>
-<div style="text-align: right"> 26002304---</div>
+<div style="text-align: right"> 26002303174</div>
 <div style="text-align: right"> April 19th 2024</div>
 
 ##  ​​御朱印帳 No.1 15万件超の神社・お寺がいいね

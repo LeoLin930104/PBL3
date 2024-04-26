@@ -1,10 +1,11 @@
-# PBL3 - (Group Name?)
+# PBL3 - (Group C)
 
 ## Project Description
 
 >  Shrine hopping is a popular activity to tourists in Japan, Kyoto. It is harder to expect a copnfortable experience to shrine hopping with the high chance of facing a sea of people. This project is in effort to solve this issue by processing crowdedness data of various shrines in Kyoto, recommend users with a planned route between shrines to avoid potential crowds.
 
 ## Documentation Index
+- [New Documentation Site](/docs/index.html)
 
 > ### Proposal
 >  + [Project Proposal](/Documentation/proposal.md)
