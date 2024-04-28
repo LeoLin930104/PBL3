@@ -6,5 +6,5 @@
  - Sakai Tomoki 
  - Hama Yuina
  - Liang Shu-Tong
- - Joeseph Eugene Pelc
+ - Joseph Eugene Pelc
  - Lin Chung-Hsi
