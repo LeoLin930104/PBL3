@@ -13,8 +13,8 @@
 ***
 
 > ### Phase 1
->  + [Reviews](Documentation/Reviews/reviews.md)
->  + [System Requirement](Documentation/system_requirement.md)
+>  + [Brainstorming](/Documentation/BrainStorm/brainstorm.md)
+>  + [Reviews](/Documentation/Reviews/reviews.md)
 
 ***
 
