@@ -46,8 +46,8 @@
 
 ***
 
-> Proposal Writing & In class Group Presenation Preperation (Week 3)
+> Proposal Writing & In-class Group Presenation Preperation (Week 3)
 >   We have assigned three people to write the project proposal together. And attached a due day of Friday, which is when the weekly meeting happens
 >   The proposal, as of date of writing, is already finished and can be read on [here](/Documentation/proposal.md).
 >   We have assigned two people to, based on the written proposal, transform the proposal into a speech format for the upcoming small presentation in class.
->   The speech has a google document that will be translate into a document on the website in a later date. [Presentation Script](https://docs.google.com/document/d/1eLycklW9CEYqvo7gAsVhbRbsvYV5R6GEZNl2UDbrxrI/edit?usp=sharing)
+>   The speech has a google document that will be translated into a document on the website at a later date. [Presentation Script](https://docs.google.com/document/d/1eLycklW9CEYqvo7gAsVhbRbsvYV5R6GEZNl2UDbrxrI/edit?usp=sharing)

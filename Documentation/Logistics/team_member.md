@@ -1,10 +1,10 @@
-> [Back](../README.md)
+> [Back](../../README.md)
 
 # Team members
 
- - Myat Ma De May Phuu Ngon - Project Manager
- - Sakai Tomoki 
- - Hama Yuina
- - Liang Shu-Tong
- - Joseph Eugene Pelc
- - Lin Chung-Hsi
+ - SAKAI Tomoki
+ - PELC Joseph Eugene
+ - LIANG Shutong
+ - MYAT Ma De May Phuu Ngon
+ - HAMA Yuina
+ - LIN Chung Hsi
