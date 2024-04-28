@@ -12,6 +12,11 @@
 
 ***
 
+> ### Team Members
+>  + [Team members](/Documentation/Logistics/team_member.md)
+
+***
+
 > ### Phase 1
 >  + [Brainstorming](/Documentation/BrainStorm/brainstorm.md)
 >  + [Reviews](/Documentation/Reviews/reviews.md)
