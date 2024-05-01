@@ -192,7 +192,7 @@
 									// Remove any existing ID to avoid duplication
 									ElementClone.removeAttribute('id');
 									var regex = new RegExp(searchText, 'gi');
-									ElementClone.innerHTML = ElementClone.textContent.replace(regex, '<span class = "highlight">'+searchText+'</span>');
+									ElementClone.innerHTML = ElementClone.textContent.replace(regex, '<span class = "highlight">$&</span>');
 									
 									
 									// Append the cloned parent element to the results container
