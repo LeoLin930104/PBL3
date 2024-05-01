@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>CoderDocs - Bootstrap Documentation Template For Software Projects</title>
+    <title>ShrineSeeker - Team</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -41,9 +41,91 @@
                  </div><!--//docs-logo-wrapper-->
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
 	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		                <form class="search-form" onsubmit="return false;">
+				            <input id = 'searchText' type="text" placeholder="Search the docs..." name="search" class="form-control search-input" onkeydown="handleKeyPress(event)">
 				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+							<script>
+								// Function to handle key press event and trigger search on Enter key
+								function handleKeyPress(event) { 
+									var keyCode = event.keyCode || event.which;
+									var validKeyCodes = [8, 13]; // Backspace (8) and Enter (13)
+									
+									// Check if the key pressed is a character or a valid key
+									if ((keyCode >= 65 && keyCode <= 90) || validKeyCodes.includes(keyCode)) {
+										var currentSearchText = document.getElementById('searchText').value.trim();
+										var keyPressed = event.key;
+						
+										// Handle Backspace key press
+										if (keyCode === 8) {
+											// Remove the last character from the search text
+											if(currentSearchText == ''){
+												
+											} else {
+												currentSearchText = currentSearchText.slice(0, -1);
+											}
+										} else if (keyCode === 13) {
+											// If Enter is pressed, trigger search
+											searchText();
+											return;
+										} else {
+											// Append the pressed key to the current search text
+											currentSearchText += keyPressed;
+										}
+						
+										// Trigger the search
+										searchText(currentSearchText.toLowerCase());
+									}
+								}
+						
+								// Function to search for text within the website content and display search results
+								function searchText(text) {
+									var searchText = text
+									console.log(searchText)
+									var resultsContainer = document.getElementById('searchResults');
+									resultsContainer.innerHTML = ''; // Clear previous search results
+									console.log(searchText);
+									if (searchText === '') {
+										document.getElementById('content').style.display = '';
+										document.getElementById('resultContainer').style.display = 'none';
+										return; // Do nothing if search text is empty
+									}
+									var searchableElements = document.querySelectorAll('section'); // Add more elements as needed
+
+									var resultsFound = false;
+								
+									// Iterate over each searchable element
+									searchableElements.forEach(function(element) {
+									var content = element.textContent.trim().toLowerCase(); // Get the text content of the element
+								
+										// Check if the element's content contains the desired text
+										if (content.includes(searchText)) {
+											// Clone the parent element and its content
+											var ElementClone = element.cloneNode(true);
+											
+											// Remove any existing ID to avoid duplication
+											ElementClone.removeAttribute('id');
+											var regex = new RegExp(searchText, 'gi');
+											ElementClone.innerHTML = ElementClone.textContent.replace(regex, '<span class = "highlight">'+searchText+'</span>');
+											
+											
+											// Append the cloned parent element to the results container
+											resultsContainer.appendChild(ElementClone);
+											resultsFound = true;
+										}
+									});
+								
+									// If no results found, display a message
+									if (!resultsFound) {
+										var noResultsElement = document.createElement('p');
+										noResultsElement.textContent = 'No results found.';
+										resultsContainer.appendChild(noResultsElement);
+									}
+
+									document.getElementById('content').style.display = 'none';
+									document.getElementById('resultContainer').style.display = '';
+
+								}
+							</script>
 				        </form>
 	                </div>
 	
@@ -86,7 +168,15 @@
 		    </nav><!--//docs-nav-->
 	    </div><!--//docs-sidebar-->
 	    <div class="docs-content">
-		    <div class="container">
+			<div class = "container" id = "resultContainer" style = "display: none;">
+				<article class = "docs-article">
+					<header class="docs-header">
+						<h1 class="docs-heading">Search Results</h1>
+					</header>
+					<section id = "searchResults"></section>
+				</article>
+			</div>
+		    <div class="container" id = "content">
 			    <article class="docs-article" id="section-1">
 				    <header class="docs-header">
 						<h1>Team Members</h1>
@@ -134,29 +224,6 @@
 					
 					<section class="docs-section" id="item-2-3">
 						<h2 class="section-heading">Section Item 3.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="section-3">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Intergrations</h1>
-					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="item-3-1">
-						<h2 class="section-heading">Section Item 4.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-3-2">
-						<h2 class="section-heading">Section Item 4.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section><!--//section-->
-					
-					<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Section Item 4.3</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
 					</section><!--//section-->
 			    </article><!--//docs-article-->
