@@ -1,4 +1,4 @@
-# PBL3 - (Group C)
+# ShrineSeeker - (Group C)
 
 ## Project Description
 
