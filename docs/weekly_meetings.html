@@ -130,8 +130,12 @@
 		    <div class="top-search-box d-lg-none p-3">
 				<form class="search-form" onsubmit="return false;">
 					<input id = 'searchText' type="text" placeholder="Search the docs..." name="search" class="form-control search-input" onkeydown="handleKeyPress(event)">
-					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+					<button type="submit" class="btn search-btn" value="Search" onclick="handleButtonPress()"><i class="fas fa-search"></i></button>
 					<script>
+						function handleButtonPress(){
+							var currentSearchText = document.getElementById('searchText').value.trim();
+							searchText(currentSearchText.toLowerCase());
+						}
 						// Function to handle key press event and trigger search on Enter key
 						function handleKeyPress(event) { 
 							var keyCode = event.keyCode || event.which;
