@@ -48,17 +48,102 @@
 		    <h1 class="page-heading single-col-max mx-auto">Shrines & Temple Crowdedness</h1>
 		    <div class="page-intro single-col-max mx-auto">This site holds all of the documentation produced by Group C from PBL3 2024.</div>
 		    <div class="main-search-box pt-3 d-block mx-auto">
-                 <form class="search-form w-100">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
+				<form class="search-form w-100" onsubmit="return false" style = "display: none">
+					<input id = 'searchText' type="text" placeholder="Search the docs..." name="search" class="form-control search-input" onkeydown="handleKeyPress(event)">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+					<script>
+						// Function to handle key press event and trigger search on Enter key
+						function handleKeyPress(event) { 
+							var keyCode = event.keyCode || event.which;
+							var validKeyCodes = [8, 13]; // Backspace (8) and Enter (13)
+							
+							// Check if the key pressed is a character or a valid key
+							if ((keyCode >= 65 && keyCode <= 90) || validKeyCodes.includes(keyCode)) {
+								var currentSearchText = document.getElementById('searchText').value.trim();
+								var keyPressed = event.key;
+				
+								// Handle Backspace key press
+								if (keyCode === 8) {
+									// Remove the last character from the search text
+									if(currentSearchText == ''){
+										
+									} else {
+										currentSearchText = currentSearchText.slice(0, -1);
+									}
+								} else if (keyCode === 13) {
+									// If Enter is pressed, trigger search
+									searchText();
+									return;
+								} else {
+									// Append the pressed key to the current search text
+									currentSearchText += keyPressed;
+								}
+				
+								// Trigger the search
+								searchText(currentSearchText.toLowerCase());
+							}
+						}
+				
+						// Function to search for text within the website content and display search results
+						function searchText(text) {
+							var searchText = text
+							console.log(searchText)
+							var resultsContainer = document.getElementById('resultContainer');
+							resultsContainer.innerHTML = ''; // Clear previous search results
+							console.log(searchText);
+							if (searchText === '') {
+								document.getElementById('content').style.display = '';
+								document.getElementById('resultContainer').style.display = 'none';
+								return; // Do nothing if search text is empty
+							}
+							var searchableElements = document.querySelectorAll('.col-12'); // Add more elements as needed
+
+							var resultsFound = false;
+						
+							// Iterate over each searchable element
+							searchableElements.forEach(function(element) {
+							var content = element.textContent.trim().toLowerCase(); // Get the text content of the element
+						
+								// Check if the element's content contains the desired text
+								if (content.includes(searchText)) {
+									// Clone the parent element and its content
+									var ElementClone = element.cloneNode(true);
+									
+									// Remove any existing ID to avoid duplication
+									ElementClone.removeAttribute('id');
+									var regex = new RegExp(searchText, 'gi');
+									ElementClone.innerHTML = ElementClone.textContent.replace(regex, '<span style = "background-color: yellow;">$&</span>');
+									
+									
+									// Append the cloned parent element to the results container
+									resultsContainer.appendChild(ElementClone);
+									resultsFound = true;
+								}
+							});
+						
+							// If no results found, display a message
+							if (!resultsFound) {
+								var noResultsElement = document.createElement('p');
+								noResultsElement.textContent = 'No results found.';
+								resultsContainer.appendChild(noResultsElement);
+							}
+
+							document.getElementById('content').style.display = 'none';
+							document.getElementById('resultContainer').style.display = '';
+
+						}
+					</script>
+				</form>
              </div>
 	    </div>
     </div><!--//page-header-->
    <div class="page-content">
 	    <div class="container">
 		    <div class="docs-overview py-5">
-			    <div class="row justify-content-center">
+				<div class = "row justify-content-center" id = "resultContainer" style = "display: none;">
+					<p>iuygf</p>
+				</div>
+			    <div class="row justify-content-center" id = "content">
 				    <div class="col-12 col-lg-4 py-3">
 					    <div class="card shadow-sm">
 						    <div class="card-body">
@@ -85,7 +170,7 @@
 							        <span class="card-title-text">Project Proposal</span>
 							    </h5>
 							    <div class="card-text">
-									You can learn in details about our project. What we are doing, where we are doing it, how we are going to do it. 
+									You can learn in details about our project. What we are doing, why we are doing it, how we are going to do it. 
 								</div>
 							    <a class="card-link-mask" href="project_proposal.html"></a>
 						    </div><!--//card-body-->
@@ -101,7 +186,7 @@
 							        <span class="card-title-text">Reviews</span>
 							    </h5>
 							    <div class="card-text">
-								    This section include all the papers and apps that we have reviewed. The review are references that we used to refine our project. We use the papers to validate our ideas. We use similar app for references to our app
+								    This section include all the papers and apps that we have reviewed. The review are references that we used to refine our project. We use the papers to validate our ideas. We use similar app as inspirations.
 								</div>
 							    <a class="card-link-mask" href="reviews.html"></a>
 						    </div><!--//card-body-->
@@ -133,7 +218,7 @@
 							        <span class="card-title-text">Requirements</span>
 							    </h5>
 							    <div class="card-text"> Section Description</div>
-							    <a class="card-link-mask" href="reference.html#section-5"></a>
+							    <a class="card-link-mask" href="404.html"></a>
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
@@ -149,7 +234,7 @@
 							    <div class="card-text">
 									Section Description
 								</div>
-							    <a class="card-link-mask" href="reference.html#section-6"></a>
+							    <a class="card-link-mask" href="404.html"></a>
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
@@ -165,7 +250,7 @@
 							    <div class="card-text">
 									Section Description
 								</div>
-							    <a class="card-link-mask" href="reference.html#section-7"></a>
+							    <a class="card-link-mask" href="404.html"></a>
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
@@ -196,7 +281,7 @@
 							    <div class="card-text">
 									Section Description
 								</div>
-							    <a class="card-link-mask" href="reference.html#section-9"></a>
+							    <a class="card-link-mask" href="404.html"></a>
 						    </div><!--//card-body-->
 					    </div><!--//card-->
 				    </div><!--//col-->
@@ -209,10 +294,11 @@
 	    <div class="theme-bg-shapes-right"></div>
 	    <div class="theme-bg-shapes-left"></div>
 	    <div class="container">
-		    <h3 class="mb-2 text-white mb-3">Launch Your Software Project Like A Pro</h3>
-		    <div class="section-intro text-white mb-3 single-col-max mx-auto">Want to launch your software project and start getting traction from your target users? Check out our premium <a class="text-white" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Bootstrap 5 startup template CoderPro</a>! It has everything you need to promote your product.</div>
+		    <h3 class="mb-2 text-white mb-3">Have you tried the Search function?</h3>
+		    <div class="section-intro text-white mb-3 single-col-max mx-auto">I spent a lot of time on that feature, I would appreciate it if you try it out.</div>
+			<div class="section-intro text-white mb-3 single-col-max mx-auto">Btw, another button to our github.</div>
 		    <div class="pt-3 text-center">
-			    <a class="btn btn-light" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Get CoderPro<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+			    <a class="btn btn-light" href="https://github.com/LeoLin930104/PBL3">Github <i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 		    </div>
 	    </div>
     </section><!--//cta-section-->
