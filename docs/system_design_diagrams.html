@@ -158,16 +158,16 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">System Overview Diagram</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">State Diagram</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Class Diagram</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Account Creation Activity Diagram</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7">Login Activity Diagram</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-8">User Page Activity Diagram</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-9">Requirement Elicitation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-10">Use Case Diagram</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-11">User Requirement</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-12">System Requirement</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-13">Non-functional Requirement</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-14">Conclution</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-15">Q&A</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">User Page Activity Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7">Shrine Page Activity Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-8">Map Page Activity Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-9">Account Creation Activity Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-10">Login Activity Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-11">Shrine Look up Sequence Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-12">Route Requesting Sequence Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-13">Check Crowdedness Sequence Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-14">Recover Password Sequence Diagram</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-15">Add Shrine Sequence Diagram</a></li>
 			    </ul>
 
 		    </nav><!--//docs-nav-->
@@ -188,60 +188,75 @@
 				    </header>
 					<section class="docs-section" id="item-1-1">
 						<h1>Use Case Diagram</h1>
+						<p>The use case diagram describes all the possible use case that each actors can interact with in the system.</p>
 						<img width = 100% src = "assets/images/diagrams/use_case.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-2">
 						<h1>Context Model</h1>
-						<img width = 50% src = "assets/images/diagrams/context_model.jpg">
+						<img width = 50% src = "assets/images/diagrams/context_model.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-3">
 						<h1>System Overview diagram</h1>
+						<p>This activity diagram summarizes all of the functions in the whole system. Unregistered users are encouraged to make an account before being allowed access to the functions.</p>
 						<img width = 100% src = "assets/images/diagrams/system_overview.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-4">
 						<h1>State diagram</h1>
+						<p>This diagram shows the description of the user interface, or display, of the application during different states. Also what actions brings a state to another.</p>
 						<img width = 100% src = "assets/images/diagrams/state.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-5">
-						<h1>System Overview diagrams</h1>
+						<h1>Class diagrams</h1>
+						<p>This diagram shows all the classes and the relation between the classes that will be implemented in our application.</p>
 						<img width = 100% src = "assets/images/diagrams/class_diagram.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-6">
-						<h1>Account Creation Activity Diagram</h1>
-						<p>This activity diagram shows the signing up procedure for users to create an account. The requirement of the password should be 8 characters long including both uppercase and lowercase letters. Users can also retry to create an account if the link has expired.</p>
-						<img width = 70% src = "assets/images/diagrams/Account Creation.drawio.svg">
-					</section><!--//section-->
-					<section class="docs-section" id="item-1-7">
-						<h1>Login Activity Diagram</h1>
-						<p>The process of login to reach the user's homepage with processing email and passwords. It also guides users to sign up and forget the password page if they do not have an account or have forgotten passwords.</p>
-						<img width = 70% src = "assets/images/diagrams/Login_activity.drawio.svg">
-					</section><!--//section-->
-					<section class="docs-section" id="item-1-8">
 						<h1>User Page Activity Diagram</h1>
 						<p>The activity diagram describes the progress of logging out, deleting the account, checking achievements and checking shrines that are favorited and visited. All of these functions are available on the user page. One thing to note is that the user has to be logged in before doing the above mentioned functions.</p>
 						<img width = 100% src = "assets/images/diagrams/user_page_activity.drawio.svg">
 					</section><!--//section-->
-					<section class="docs-section" id="item-1-9">
+					<section class="docs-section" id="item-1-7">
 						<h1>Shrine Page Activity Diagram</h1>
 						<p>Implemented four use cases, including check/leave comments, check/leave ratings, favorite, and visited. They will all be on every shrine page.</p>
 						<img width = 70% src = "assets/images/diagrams/shrine_page_activity.drawio.svg">
 					</section><!--//section-->
+					<section class="docs-section" id="item-1-8">
+						<h1>Map Page Activity Diagram</h1>
+						<img width = 100% src = "assets/images/diagrams/map.drawio.svg">
+					</section><!--//section-->
+					<section class="docs-section" id="item-1-9">
+						<h1>Account Creation Activity Diagram</h1>
+						<p>This activity diagram shows the signing up procedure for users to create an account. The requirement of the password should be 8 characters long including both uppercase and lowercase letters. Users can also retry to create an account if the link has expired.</p>
+						<img width = 70% src = "assets/images/diagrams/Account Creation.drawio.svg">
+					</section><!--//section-->
 					<section class="docs-section" id="item-1-10">
-						<img width = 100% src = "assets/images/diagrams/">
+						<h1>Login Activity Diagram</h1>
+						<p>The process of login to reach the user's homepage with processing email and passwords. It also guides users to sign up and forget the password page if they do not have an account or have forgotten passwords.</p>
+						<img width = 70% src = "assets/images/diagrams/Login_activity.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-11">
-						<img width = 100% src = "assets/images/diagrams/">
+						<h1>Looking up Shrine by Name or Category Sequence Diagram</h1>
+						<p>This sequence diagram shows the flow in which the user searches for a particular shrine information. There are two types of search method, name and category.</p>
+						<img width = 70% src = "assets/images/diagrams/Shrine_lookup.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-12">
-						<img width = 100% src = "assets/images/diagrams/">
+						<h1>Sequence Diagram for "Request for Shrine Hopping Routes"</h1>
+						<p></p>
+						<img width = 70% src = "assets/images/diagrams/request_routes.drawio.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-13">
-						<img width = 100% src = "assets/images/diagrams/">
+						<h1>Sequence Diagram for "Check Crowdedness Around Shrines"</h1>
+						<img width = 70% src = "assets/images/diagrams/check_crowdedness.svg">
 					</section><!--//section-->
 					<section class="docs-section" id="item-1-14">
-						<img width = 100% src = "assets/images/diagrams/">
+						<h1>Sequence Diagram for "Recover Password"</h1>
+						<p>This sequence diagram shows the process for recovering the password if a user has forgotten the password to their account. The link to reset password will expire within 10 minutes and the user will have to try again if it expires.</p>
+						<img width = 70% src = "assets/images/diagrams/recover_password.drawio.svg">
 					</section><!--//section-->
-						<img width = 100% src = "assets/images/diagrams/">
+					<section class="docs-section" id="item-1-15">
+						<h1>Sequence Diagram for "Add Shrine"</h1>
+						<p>This sequence diagram shows the flow of shrine being added by the administrator. This is done in cases where new shrines have been built or shrines that are not already in our database are added.</p>
+						<img width = 70% src = "assets/images/diagrams/add_shrine.drawio.svg">
 					</section><!--//section-->
 			    </article><!--//docs-article-->
 
